@@ -103,7 +103,7 @@ function populateInfoWindow(marker, infowindow) {
 //o conteúdo do infowindow para ser mostrado. Baseada em código-fonte de aulas.
 function wikipedia(infowindow, marker) {
 
-  var wikiUrl = "http://pt.wikipedia.org/w/api.php?action=opensearch&" +
+  var wikiUrl = "https://pt.wikipedia.org/w/api.php?action=opensearch&" +
   "search=" + marker.name + "&format=json&callback=wikiCallback";
 
   //Requisição assíncrona da API da Wikipedia
@@ -121,7 +121,7 @@ function wikipedia(infowindow, marker) {
       }
       for (var i = 0; i < articleList.length; i++) {
         articleStr = articleList[i];
-        var url = "http://pt.wikipedia.org/wiki/" + articleStr;
+        var url = "https://pt.wikipedia.org/wiki/" + articleStr;
         wikiStr = wikiStr + '<li><a href="' + url + '">' +
         articleStr + '</a></li>';
       }
@@ -152,7 +152,7 @@ function showListings() {
 // of 0, 0 and be anchored at 10, 34).
 function makeMarkerIcon(markerColor) {
   var markerImage = new google.maps.MarkerImage(
-    'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
+    'https://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
     '|40|_|%E2%80%A2',
     new google.maps.Size(21, 34),
     new google.maps.Point(0, 0),
