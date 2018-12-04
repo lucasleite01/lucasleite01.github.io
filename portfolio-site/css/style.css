@@ -1,0 +1,113 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 5% 0 0 0;
+    color: #2d3c49;
+}
+
+hr {
+    border: solid #7d97ad 2px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 400%;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 400;
+    color: #7d97ad;
+}
+
+h4 {
+    font-size: 155%;
+}
+
+section {
+    text-align: center;
+    align-self: center;
+}
+
+.descricao p {
+    text-align: justify;
+}
+
+.descricao h2 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #2d3c49;
+    text-align: center;
+}
+
+.texto-header {
+    text-align: right;
+}
+
+.logo-udacity {
+    width: 17%;
+}
+
+@media screen and (max-width: 414px) { /*Google Nexus 5X and Apple iPad*/
+    h1 {
+        font-size: 165%;
+    }
+
+    h4 {
+        font-size: 55%;
+    }
+
+    .logo-udacity {
+        width: 25%;
+    }
+
+    .projeto {
+        display: inline-block;
+    }
+
+    picture {
+        margin: 1% 0 1% 0;
+    }
+
+    .projeto .descricao {
+        padding: 0 2% 0 2%;
+    }
+
+    .descricao p {
+        display: block;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 608px) and (max-width: 991px) { /*half desktop screen*/
+    h1 {
+        font-size: 300%;
+    }
+
+    h4 {
+        font-size: 115%;
+    }
+
+    .projeto {
+        display: inline-flex;
+        flex-flow: row;
+    }
+
+    picture {
+        margin: 1% 0 1% 0;
+    }
+
+    .projeto .descricao {
+        width: 50%;
+        padding: 0 2% 0 2%;
+        text-align: left;
+    }
+
+    .descricao p {
+        display: block;
+        text-align: left;
+    }
+}
